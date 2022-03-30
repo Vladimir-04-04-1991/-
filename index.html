@@ -8,9 +8,10 @@
       <link href="CSS/style.css" rel="stylesheet">
     </head>
     <body>
+      <!-- POPAP
       <div class="_hidden">        
         <div class="form_popap">
-          <img src="svg/form-x.svg" alt="закрыть" class="close">
+          <button type="submit" class="button_close"><img src="svg/form-x.svg" alt="закрыть" class="close"></button>
           <h2 class="header_trends">Ваш фитбек</h2>
           <form>
             <label class="form-group">
@@ -26,23 +27,25 @@
               <span class="form_text">Вы подписаны на e-mail рассылку?</span>
               <div class="selection_form">
                 <label class="selection_form_item">
-                  <input type="radio" name="radio-group">
-                      Да
+                  <input type="radio" name="radio-group" class="radio-select">
+                      <span class="radio-select-text">Да</span>
                 </label>
                 <label class="selection_form_item">
-                    <input type="radio" name="radio-group">
-                        Нет
+                    <input type="radio" name="radio-group" class="radio-select">
+                      <span class="radio-select-text">Нет</spa>
                 </label>
               </div>
             </div>
             <span class="form_text">Расскажите, какой контент вы бы хотели видеть на нашем сайте?</span>
             <label class="form-group">              
-              <input type="text" class="popap_text" placeholder="Может, больше рецептов?">
+              <textarea type="text" class="popap_text" placeholder="Может, больше рецептов?"></textarea>
             </label>
             <button class="button-send">отправить</button>
           </form>
         </div>
-      </div>
+      </div> 
+      -->
+
       <header>   
         <div class="navigation">
           <a href="#0" class="logo-block">
@@ -79,10 +82,10 @@
       <article>
         <h2 class="header_trends">Сейчас в тренде</h2>
         <div class="trends">
-            <div class="trend-1">
+            <div class="trend trend-1">
               <div class="trend-text">
                 <ul class="content-hesh-list">
-                  <li class="content-hesh-list-li">
+                  <li class="content-hesh-list-li content-hesh-list-li-margin">
                     <a class="content-hesh-teg" href="#0">lifestyle</a>
                   </li>
                   <li class="content-hesh-list-li">
@@ -92,10 +95,10 @@
                 <h2 class="header_trend">Сейчас в тренде: сад на подоконнике</h2>
               </div>
             </div>
-            <div class="trend-2">
+            <div class="trend trend-2">
               <div class="trend-text">
                 <ul class="content-hesh-list">
-                  <li class="content-hesh-list-li">
+                  <li class="content-hesh-list-li content-hesh-list-li-margin">
                     <a class="content-hesh-teg" href="#0">lifestyle</a>
                   </li>
                   <li class="content-hesh-list-li">
@@ -105,10 +108,10 @@
                 <h2 class="header_trend">Сыры на красивых картинках из интернета: какие они на вкус?</h2>
               </div>
             </div>
-            <div class="trend-3">
+            <div class="trend trend-3">
               <div class="trend-text">
                 <ul class="content-hesh-list">
-                  <li class="content-hesh-list-li">
+                  <li class="content-hesh-list-li content-hesh-list-li-margin">
                     <a class="content-hesh-teg" href="#0">lifestyle</a>
                   </li>
                   <li class="content-hesh-list-li">
@@ -118,11 +121,11 @@
                 <h2 class="header_trend">Собираемся в первый поход в горы</h2>
               </div>
             </div>
-            <div class="trend-4">
+            <div class="trend trend-4">
               <div class="mask">
                 <div class="trend-text">
                   <ul class="content-hesh-list">
-                    <li class="content-hesh-list-li">
+                    <li class="content-hesh-list-li content-hesh-list-li-margin">
                       <a class="content-hesh-teg" href="#0">lifestyle</a>
                     </li>
                     <li class="content-hesh-list-li">
@@ -155,7 +158,7 @@
                   </h2>
                   <time class="content-time" datetime="2019-06-10">10 июня 2019</time>
                   <span class="content-autor">Неизвестный автор</span>                  
-                  <p class="content-text-description">Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города... 
+                  <p class="content-text-description content-text-description-line">Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города... 
                     Музеи еще закрыты. Что посмотреть?
                   </p>
                 </div>
@@ -177,7 +180,7 @@
                   </h2>
                   <time class="content-time" datetime="2019-06-10">10 июня 2019</time>
                   <span class="content-autor">Неизвестный автор</span>
-                  <p class="content-text-description">Расскажем, какие упражнения выбрать и как сделать коврик 
+                  <p class="content-text-description content-text-description-line">Расскажем, какие упражнения выбрать и как сделать коврик 
                     для занятий йогой из того, что можно найти в шкафу.
                   </p>
                 </div>
@@ -199,7 +202,7 @@
                   <p class="content-text-description">Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы 
                     разобьете свою палатку?
                   </p>
-                  <p class="content-text-description2"> Мы составили список лучших летних фестивалей по всему миру.</p>
+                  <p class="content-text-description2  content-text-description-line"> Мы составили список лучших летних фестивалей по всему миру.</p>
                   
                 </div>
               </article>
@@ -220,7 +223,7 @@
                   </h2>
                   <time class="content-time" datetime="2019-06-10">10 июня 2019</time>
                   <span class="content-autor">Неизвестный автор</span>
-                  <p class="content-text-description">Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем 
+                  <p class="content-text-description content-text-description-line">Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем 
                     физику, химию и микробиологию еды.
                   </p>
                 </div>
@@ -304,7 +307,6 @@
                     </label>
                     <button class="button-search">
                       <span class="visually-hidden">кнопка поиска</span>
-                      <img src="svg/search.svg" class="img-search" alt="поиск">
                     </button>
                   </div>
                 </form>
@@ -378,64 +380,67 @@
             <h2 class="header_products">Наши изделия</h2>
             <div class="products_list">
                 <div class="product">
-                  <img class="product_img" src="images/shop-item-tablet1.jpg" alt="подушка с принтом">
-                  <div class="product-description">
-                    <span>
-                      <h4 class="product-header">Подушки на диван</h4>
-                      <p class="product-text-description">Набор из двух подушек с моднами принтами. 
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="images/shop-item-desk1.jpg">
+                    <source media="(min-width: 768px)" srcset="images/shop-item-tablet1.jpg">
+                    <source media="(min-width: 360px)" srcset="images/shop-item-mobile1.jpg">
+                    <img src="images/shop-item-desk1.jpg" alt="Подушки на диван">
+                  </picture>                
+                  <div class="product-description">                    
+                    <h4 class="product-header">Подушки на диван</h4>
+                    <p class="product-text-description">Набор из двух подушек с моднами принтами. 
                         Видео о создании <a href="#0" class="product_description_link">здесь.</a>
-                      </p>
-                    </span>
+                    </p>                    
                     <div class="shop">
                       <span class="price">
-                        <p class="old_price">1000 P</p>
-                        <p class="new_price">800 P</p>
-                      </span>
-                      <form>
-                        <button type="submit" class="store">В магазин</button>
-                      </form>
+                        <p class="old_price">1000 <span class="rub">P</span></p>
+                        <p class="new_price">800 <span class="rub">P</span></p>
+                      </span>                      
+                      <button type="submit" class="store">В магазин</button>                      
                     </div>
                   </div>
                 </div>
                 <div class="product">
-                  <img class="product_img" src="images/shop-item-tablet2.jpg" alt="кукла зайчик">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="images/shop-item-desk2.jpg">
+                    <source media="(min-width: 768px)" srcset="images/shop-item-tablet2.jpg">
+                    <source media="(min-width: 360px)" srcset="images/shop-item-mobile2.jpg">
+                    <img src="images/shop-item-desk2.jpg" alt="кукла зайчик">
+                  </picture>                  
                   <div class="product-description">
-                    <span>
-                      <h4 class="product-header">Кукла "зайчик"</h4>
-                      <p class="product-text-description">Интерьерная рукодельная кукла "Зайчик", созданию которой
+                    <h4 class="product-header">Кукла "зайчик"</h4>
+                    <p class="product-text-description">Интерьерная рукодельная кукла "Зайчик", созданию которой
                         посвящена <a href="#0" class="product_description_link">весенняя серия постов</a> в блоге и несколько 
                         подкастов.
-                      </p>
-                    </span>
+                    </p>                    
                     <div class="shop">
                       <span class="price">
                         <p class="old_price"></p>
-                        <p class="new_price">3500 P</p>
+                        <p class="new_price">3500 <span class="rub">P</span></p>
                       </span>
-                      <form>
-                        <button type="submit" class="store">В магазин</button>
-                      </form>
+                      <button type="submit" class="store">В магазин</button>                      
                     </div>
                   </div>
                 </div>
                 <div class="product">
-                  <img class="product_img" src="images/shop-item-tablet3.jpg" alt="шестиугольная рамка">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="images/shop-item-desk3.jpg">
+                    <source media="(min-width: 768px)" srcset="images/shop-item-tablet3.jpg">
+                    <source media="(min-width: 360px)" srcset="images/shop-item-mobile3.jpg">
+                    <img src="images/shop-item-desk3.jpg" alt="шестиугольная рамка">
+                  </picture>
                   <div class="product-description">
-                    <span>
-                      <h4 class="product-header">Шестиугольная рамка</h4>
-                      <p class="product-text-description">Необычная рамка для украшения дома из видео 
-                        <a href="#0" class="product_description_link">"Как сделать рамку из подручных средств за 30 минут"</a>
-                      </p>
-                    </span>
+                    <h4 class="product-header">Шестиугольная рамка</h4>
+                    <p class="product-text-description">Необычная рамка для украшения дома из видео 
+                      <a href="#0" class="product_description_link">"Как сделать рамку из подручных средств за 30 минут"</a>
+                    </p>                    
                     <div class="shop">
                       <span class="price">
-                        <p class="old_price">500 P</p>
-                        <p class="new_price">400 P</p>
+                        <p class="old_price">500 <span class="rub">P</span></p>
+                        <p class="new_price">400 <span class="rub">P</span></p>
                       </span>
-                      <form>
-                        <button type="submit" class="store">В магазин</button>
-                      </form>
-                    </div>
+                      <button type="submit" class="store">В магазин</button>
+                      </div>
                   </div>
                 </div>
             </div>
