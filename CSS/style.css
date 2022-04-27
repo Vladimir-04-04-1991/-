@@ -134,7 +134,7 @@
   margin-bottom: 60px;
 }
 
-header::after {
+.header_block::after {
   content: "";
   position: absolute;
   top: 0;
@@ -166,8 +166,9 @@ header::after {
   width: 185px;
 }
 
-.menu {
+.menu  {
   z-index: 2;
+  display: flex;
 }
 
 .menu-list {
@@ -191,6 +192,10 @@ header::after {
   .menu-link:hover {
     color: #ffffff;
     font-family: "Open Sans Regular";
+  }
+
+  .menu_hamburger {
+    display: none;
   }
 
 .header_one_block {
@@ -419,12 +424,13 @@ header::after {
   margin-bottom: 55px;
 }
 
-.aside {
+.aside_content {
   margin-bottom: 20px;
 }
 
 .aside-image {
   width: 25.5%;
+  max-width: 75px;
   margin-right: 20px;
 }
 
@@ -445,6 +451,7 @@ header::after {
 
 .search {
   display: flex;
+  min-width: 225px;   
   height: 45px;
   margin-top: 60px;
 }
@@ -464,8 +471,12 @@ header::after {
   border: none;
 }
 
+.label_search {
+  width: 100%;
+}
+
 .input-search {
-  width: 225px;   
+  width: 100%;
   height: 100%;  
 }
 
@@ -745,6 +756,14 @@ header::after {
 /*    tablet      */
 
 @media (min-width: 641px) and (max-width: 1199px), (max-width: 640px) and (orientation: landscape) {
+  .menu-list {
+    display: none;
+  }
+
+  .menu_hamburger {
+    display: inline-block;
+  }
+
   .trends {
     flex-wrap: wrap;
   }
@@ -807,6 +826,38 @@ header::after {
   .form_popap {
     max-width: 330px;
   }
+
+  .navigation {
+    flex-wrap: wrap;
+  }
+
+  .menu {
+    margin-left: auto;
+  }
+
+  .logo-block {
+    margin-top: 220px;
+    width: 100%;
+    order: 1;
+  }
+
+  .logo {
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .menu_hamburger {
+    display: block;
+  }
+
+  .header_one_block {
+    margin-top: 40px;
+  }
   
   .trends {
     flex-wrap: wrap;
@@ -820,12 +871,20 @@ header::after {
     margin-right: auto;
   }
 
-  .main {
+  .main_block {
     flex-wrap: wrap;
   }
 
-  main {
+  .main_content {
     width: 100%;
+  }
+
+  .aside_block {
+    width: 100%;
+  }
+
+  .aside_content:last-of-type {
+    margin-bottom: 0px;
   }
 
   .content {
@@ -840,21 +899,19 @@ header::after {
   .products_list {
     flex-direction: column;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
   }
 
   .product {
-    width: 100%;
+    width: 90%;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
-  .product:nth-child(1) {
-    margin-bottom: 50px;
-    margin-left: 20px;
-  }
-
-  .product:nth-child(2) {
-    margin-bottom: 50px;
+  .product:last-child {
+    margin-bottom: 0px;
+    margin-left: auto;
   }
 }
 
