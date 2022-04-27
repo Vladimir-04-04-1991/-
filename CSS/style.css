@@ -12,18 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center; 
-}
-
-._hidden::after {
-  content: "";
-  background-color: #000000;
-  z-index: -1;
-  opacity: 0.6;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .form_popap {
@@ -33,12 +22,14 @@
   padding: 50px 30px;
 }
 
-.close {
+.button_close {
   position: absolute;
   top: -25px;
   right: 0;
-  width: 20px;
-  height: 20px;   
+  width: 25px;
+  height: 25px;   
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
 }
 
 .form-group {
@@ -133,7 +124,7 @@
   background-color: #323232;
 }
 
-header {
+.header_block {
   background-image: url("../images/banner-bg.jpg");
   background-color: #666664;
   background-repeat: no-repeat;
@@ -187,7 +178,7 @@ header::after {
 }
 
 .menu-list-li:nth-child(-1n+5) {
-  margin: 0px 17px;
+  margin-right: 34px;
 }
 
 .menu-link {
@@ -202,7 +193,7 @@ header::after {
     font-family: "Open Sans Regular";
   }
 
-.h1 {
+.header_one_block {
   display: flex;
   flex-wrap: wrap;
   max-width: 700px;
@@ -210,7 +201,7 @@ header::after {
 }
 
 
-h1 {
+.header_one_level {
   font-family: "Open Sans Bold";
   font-size: 45px;
   line-height:1.6;
@@ -228,8 +219,8 @@ h1 {
 }
 
 .trend {
-  max-width: calc(25% - 5px);
-  max-height: 315px;
+  width: calc(25% - 5px);
+  min-height: 310px;
   background-color: #606260;
   background-size: cover;
   position: relative;
@@ -257,14 +248,15 @@ h1 {
   padding: 35px 30px;  
 }
 
-.header_trend {
+.header_trend_link {
+  text-decoration: none;
   font-size: 20px;
   text-transform: uppercase;
   color: #ffffff;
   font-family: "Open Sans Bold";
 }
 
-.header_trend:hover {
+.header_trend_link:hover {
   color: #b59f5b;
 }
 
@@ -287,7 +279,7 @@ h1 {
   background-image: url(../images/trend4.jpg);
 }
 
-.main {
+.main_block {
   display: flex;
   max-width: 1200px;
   margin-left: auto;
@@ -297,16 +289,16 @@ h1 {
 
 }
 
-main {
+.main_content {
   width: 65%;
   position: relative;
 }
 
-aside {
+.aside_block {
   width: 270px;
 }
 
-.aside {
+.aside_content {
   display: flex;
 }
 
@@ -318,6 +310,7 @@ aside {
 
 .content-image {
   width: 49%;
+  max-height: 295px;
   background-color: #eff5f1;
 }
 
@@ -330,16 +323,17 @@ aside {
   list-style-type: none;
   font-family: "Open Sans Bold";
   font-size: 14px;
-  text-transform: uppercase;    
-}
-
-.content-hesh-list-li-margin {
-  margin-right: 20px;
+  text-transform: uppercase;      
 }
 
 .content-hesh-teg {
   text-decoration: none;
-  color: #b59f5b;  
+  color: #b59f5b; 
+  margin-right: 20px;
+}
+
+.content-hesh-teg:last-child() {
+  margin-right: 0px;
 }
 
 .content-hesh-teg:hover {
@@ -462,7 +456,7 @@ aside {
   position: absolute;
 } 
 
-input {
+.entry_field_style {
   font-family: "Open Sans Regular";
   font-size: 13px;
   background-color: #f3f7f5;
@@ -510,13 +504,13 @@ input {
   background:#b59f5b;
 }
 
-.input-Subscribe {
+.input-subscribe {
   height: 45px;
   width: 100%;
   margin-bottom: 20px;
 }
 
-.button-Subscribe {
+.button-subscribe {
   height: 45px;
   width: 100%;
   background-color: #b59f5b;
@@ -528,7 +522,7 @@ input {
   border: none;
   }
 
-.button-Subscribe:hover {
+.button-subscribe:hover {
   background-color: #313131;
 }
 
@@ -585,7 +579,7 @@ input {
   font-size: 12px;
   color: #b59f5b;
   padding-left: 5px;
-  padding-bottom: 5px;
+  vertical-align: text-top;
 }
 
 .products {
@@ -646,13 +640,18 @@ input {
 
 .store {
   width: 140px;
-  height: 50px;
   background-color: #b59f5b;
   color: #ffffff;
   text-transform: uppercase;
   font-size: 14px;
   font-family: "Open Sans Bold";
   border: none;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.store:hover {
+  background-color: #323232;
 }
 
 .old_price {
@@ -683,7 +682,7 @@ input {
   right: 0.1em;
 }
 
-footer {
+.footer_block {
   text-align: center;
   padding-bottom: 40px;
 }
@@ -751,7 +750,8 @@ footer {
   }
 
   .trend {
-    max-width: calc(50% - 5px);
+    width: calc(50% - 5px);
+    max-width: 500px;
     max-height: 250px;
     margin-bottom: 5px;
   }
@@ -785,9 +785,18 @@ footer {
     width: 45%;
   }
 
-  .product:nth-child(3) {
+  .product:nth-child(1n+3) {
+    margin-left: 7px;
+  }
+
+  .product_and {
     margin-top: 50px;
     margin-right: auto;
+  }
+
+  .social {
+    margin-left: 35px;
+    margin-right: 35px;
   }
 
 }
@@ -804,7 +813,7 @@ footer {
   }
 
   .trend {
-    max-width: 500px;
+    width: 100%;
     max-height: 230px;
     margin-bottom: 5px;
     margin-left: auto;
