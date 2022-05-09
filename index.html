@@ -11,7 +11,9 @@
       <!-- POPAP 
       <div class="_hidden">        
         <div class="form_popap">
-          <button type="submit" class="button_close"><img src="svg/form-x.svg" alt="закрыть" class="close"></button>
+          <button type="submit" class="button_close" title="закрыть">
+            <span class="visually-hidden">кнопка "закрыть"</span>
+          </button>
           <h2 class="header_trends">Ваш фитбек</h2>
           <form>
             <label class="form-group">
@@ -72,11 +74,13 @@
                 <a href="#0" class="menu-link">Контакты</a>
               </li>              
             </ul>
-            <svg class="menu_hamburger" svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 24 24" width="25px">
-              <path fill="#ffffff" d="M4,6.75l16,0c0.414,0 0.75,-0.336 0.75,-0.75c0,-0.414 -0.336,-0.75 -0.75,-0.75l-16,0c-0.414,0 -0.75,0.336 -0.75,0.75c0,0.414 0.336,0.75 0.75,0.75Z"/>
-              <path fill="#ffffff" d="M4,12.75l16,0c0.414,0 0.75,-0.336 0.75,-0.75c0,-0.414 -0.336,-0.75 -0.75,-0.75l-16,0c-0.414,0 -0.75,0.336 -0.75,0.75c0,0.414 0.336,0.75 0.75,0.75Z"/>
-              <path fill="#ffffff" d="M4,18.75l16,0c0.414,0 0.75,-0.336 0.75,-0.75c0,-0.414 -0.336,-0.75 -0.75,-0.75l-16,0c-0.414,0 -0.75,0.336 -0.75,0.75c0,0.414 0.336,0.75 0.75,0.75Z"/>
-            </svg>
+            <button class="menu_hamburger">
+              <svg svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 24 24" width="25px">
+                <path fill="#ffffff" d="M4,6.75l16,0c0.414,0 0.75,-0.336 0.75,-0.75c0,-0.414 -0.336,-0.75 -0.75,-0.75l-16,0c-0.414,0 -0.75,0.336 -0.75,0.75c0,0.414 0.336,0.75 0.75,0.75Z"/>
+                <path fill="#ffffff" d="M4,12.75l16,0c0.414,0 0.75,-0.336 0.75,-0.75c0,-0.414 -0.336,-0.75 -0.75,-0.75l-16,0c-0.414,0 -0.75,0.336 -0.75,0.75c0,0.414 0.336,0.75 0.75,0.75Z"/>
+                <path fill="#ffffff" d="M4,18.75l16,0c0.414,0 0.75,-0.336 0.75,-0.75c0,-0.414 -0.336,-0.75 -0.75,-0.75l-16,0c-0.414,0 -0.75,0.336 -0.75,0.75c0,0.414 0.336,0.75 0.75,0.75Z"/>
+              </svg>
+            </button>
           </nav>
     
         </div>
@@ -85,7 +89,7 @@
         </div>   
       </header>
 
-      <article>
+      <article class="trend-list">
         <h2 class="header_trends">Сейчас в тренде</h2>
         <div class="trends">
             <div class="trend trend-1">
@@ -107,10 +111,7 @@
               <div class="trend-text">
                 <ul class="content-hesh-list">
                   <li class="content-hesh-list-li">
-                    <a class="content-hesh-teg" href="#0">lifestyle</a>
-                  </li>
-                  <li class="content-hesh-list-li">
-                    <a class="content-hesh-teg" href="#0">interior</a>
+                    <a class="content-hesh-teg" href="#0">food</a>
                   </li>
                 </ul>
                 <h2 class="header_trend">
@@ -125,7 +126,7 @@
                     <a class="content-hesh-teg" href="#0">lifestyle</a>
                   </li>
                   <li class="content-hesh-list-li">
-                    <a class="content-hesh-teg" href="#0">interior</a>
+                    <a class="content-hesh-teg" href="#0">travel</a>
                   </li>
                 </ul>
                 <h2 class="header_trend">
@@ -138,10 +139,10 @@
                 <div class="trend-text">
                   <ul class="content-hesh-list">
                     <li class="content-hesh-list-li">
-                      <a class="content-hesh-teg" href="#0">lifestyle</a>
+                      <a class="content-hesh-teg" href="#0">food</a>
                     </li>
                     <li class="content-hesh-list-li">
-                      <a class="content-hesh-teg" href="#0">interior</a>
+                      <a class="content-hesh-teg" href="#0">health</a>
                     </li>
                   </ul>
                   <h2 class="header_trend">
@@ -314,7 +315,7 @@
                   </span>
                 </div>
                 <form>
-                  <div class="search">
+                  <div class="search-block">
                     <label class="label_search">
                       <span class="visually-hidden">поле ввода для поиска</span>
                       <input type="search" class="entry_field_style input-search" placeholder="Найти..." required>
@@ -407,8 +408,8 @@
                     </p>                    
                     <div class="shop">
                       <span class="price">
-                        <p class="old_price">1000 <span class="rub">P</span></p>
-                        <p class="new_price">800 <span class="rub">P</span></p>
+                        <p class="old_price">1000 ₽</p>
+                        <p class="new_price">800 ₽</p>
                       </span>                      
                       <button type="submit" class="store">В магазин</button>                      
                     </div>
@@ -422,7 +423,7 @@
                     <img src="images/shop-item-desk2.jpg" alt="кукла зайчик">
                   </picture>                  
                   <div class="product-description">
-                    <h4 class="product-header">Кукла "зайчик"</h4>
+                    <h4 class="product-header">Кукла «Зайчик»</h4>
                     <p class="product-text-description">Интерьерная рукодельная кукла "Зайчик", созданию которой
                         посвящена <a href="#0" class="product_description_link">весенняя серия постов</a> в блоге и несколько 
                         подкастов.
@@ -430,7 +431,7 @@
                     <div class="shop">
                       <span class="price">
                         <p class="old_price"></p>
-                        <p class="new_price">3500 <span class="rub">P</span></p>
+                        <p class="new_price">3500 ₽</p>
                       </span>
                       <button type="submit" class="store">В магазин</button>                      
                     </div>
@@ -450,8 +451,8 @@
                     </p>                    
                     <div class="shop">
                       <span class="price">
-                        <p class="old_price">500 <span class="rub">P</span></p>
-                        <p class="new_price">400 <span class="rub">P</span></p>
+                        <p class="old_price">500 ₽</p>
+                        <p class="new_price">400 ₽</p>
                       </span>
                       <button type="submit" class="store">В магазин</button>
                       </div>
